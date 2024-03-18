@@ -1,0 +1,27 @@
+{
+  "name": "dai_tp01",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "primer tp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ej01": "node src/ej01",
+    "ej02": "node src/ej02",
+    "ej03": "node src/ej03",
+    "ej04": "node src/ej04",
+    "ej05": "node src/ej05",
+    "ej06": "node src/ej06",
+    "ej07": "node src/ej07"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emilia123456/dai-tpNode1.git"
+  },
+  "author": "emi y pipa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Emilia123456/dai-tpNode1/issues"
+  },
+  "homepage": "https://github.com/Emilia123456/dai-tpNode1#readme"
+}
