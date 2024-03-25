@@ -11,8 +11,8 @@ const OMDBSearchByPage = async (searchText,page=1) => {
         const requestString=`http://www.omdbapi.com/?apikey=${APIKEY}&s=${searchText}&page=${page}`;
         console.log(requestString);
         try{
-            const responseData = await makeRequest(requestString);
-            returnObject.datos=JSON.parse(responseData);
+            const responseData = await axios.get(requestString);
+            returnObject.datos=responseData.data.Search;
             returnObject.respuesta=true;
             returnObject.cantidadTotal=returnObject.datos.totalResults
         } catch (error) {
@@ -27,11 +27,12 @@ const OMDBSearchComplete = async(searchText)=>{
          cantidadTotal:0, 
          datos :{} 
     }; 
+
     const requestString=`http://www.omdbapi.com/?apikey=${APIKEY}&s=${searchText}`;
     console.log(requestString);
     try{
-        const responseData = await makeRequest(requestString);
-        returnObject.datos=JSON.parse(responseData);
+        const responseData = await axios.get(requestString);
+        returnObject.datos=responseData.data.Search;
         returnObject.respuesta=true;
         returnObject.cantidadTotal=returnObject.datos.totalResults
     } catch (error) {
@@ -49,7 +50,7 @@ const OMDBGetByImdbID=async(imdbID)=>{
     const requestString=`http://www.omdbapi.com/?apikey=${APIKEY}&s=${imdbID}`;
     console.log(requestString);
     try{
-        const responseData = await makeRequest(requestString);
+        const responseData = await axios.get(requestString);
         returnObject.datos=JSON.parse(responseData);
         returnObject.respuesta=true;
         returnObject.cantidadTotal=returnObject.datos.totalResults
@@ -59,21 +60,6 @@ const OMDBGetByImdbID=async(imdbID)=>{
     return returnObject;
 }; 
 
-const makeRequest = (url) => {
-    return new Promise((resolve, reject) => {
-        HttpStatusCode.get(url, (response) => {
-            let data = "";
-            response.on("data", (cacho)=>{
-                data +=cacho;
-            });
-            response.on("end", ()=>{
-                resolve(data);
-            });
-        }).on("error", (error)=>{
-            reject(error);
-        });
-    });
-};
 
     
 export{OMDBSearchByPage,OMDBSearchComplete,OMDBGetByImdbID};

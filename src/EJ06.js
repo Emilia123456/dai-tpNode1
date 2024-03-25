@@ -11,6 +11,7 @@ try {
         return obj;
     }
     console.log(objeto);
+    
 } catch{
         let obj = {
             hostname: null,
