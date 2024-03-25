@@ -12,7 +12,8 @@
     "ej04": "node src/ej04",
     "ej05": "node src/ej05",
     "ej06": "node src/ej06",
-    "ej07": "node src/ej07"
+    "ej07": "node src/ej07",
+    "ej08": "node src/ej08"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,9 @@
   "bugs": {
     "url": "https://github.com/Emilia123456/dai-tpNode1/issues"
   },
-  "homepage": "https://github.com/Emilia123456/dai-tpNode1#readme"
+  "homepage": "https://github.com/Emilia123456/dai-tpNode1#readme",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "currency-map-country": "^1.0.12"
+  }
 }

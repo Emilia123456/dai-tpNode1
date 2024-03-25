@@ -1,4 +1,4 @@
-
+//funciona medio medio 
 
 import url from'./modules/url.js';
 
@@ -29,6 +29,3 @@ try {
         console.log(obj);
 
 }
-
-
-
