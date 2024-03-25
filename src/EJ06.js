@@ -1,31 +1,25 @@
-//funciona medio medio 
 
 import url from'./modules/url.js';
 
+
 try {
     let objeto = parsearUrl("emilia");
-        function parsearUrl(url){
-                const link = new URL(url)
-                let obj = {
-                    hostname: link.hostname,
-                    pathname: link.pathname,
-                    parametros: link.searchParams
-                }
-            return obj;
-        }
+    function parsearUrl(link){
+            const url = new URL(link)
+            let obj = {
+                hostname: url.hostname,
+                pathname: url.pathname,
+                parametros: url.searchParams
+            }
+        return obj;
+    }
     console.log(objeto);
 
-} catch (error) {
-    console.log("ERROR");
-        function parsearUrl(url){
-                const link = new URL(url)
-                let obj = {
-                    hostname: null,
-                    pathname: null,
-                    parametros: null
-                }
-            return obj;
+} catch{
+        let obj = {
+            hostname: null,
+            pathname: null,
+            parametros: null
         }
         console.log(obj);
-
 }
