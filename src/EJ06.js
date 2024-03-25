@@ -1,7 +1,4 @@
-
 import url from'./modules/url.js';
-
-
 try {
     let objeto = parsearUrl("emilia");
     function parsearUrl(link){
@@ -14,7 +11,6 @@ try {
         return obj;
     }
     console.log(objeto);
-
 } catch{
         let obj = {
             hostname: null,
