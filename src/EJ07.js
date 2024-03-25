@@ -1,3 +1,5 @@
+import { getCountry, getCountryByAbbreviation   } from 'currency-map-country';
+
 //problema con el node module 
 let monedaDelPais, codigoPais;
 try {
@@ -9,3 +11,10 @@ try {
 } catch (error) {
     console.log(`La moneda del país ${codigoPais} es:${null}`);
 } 
+
+
+function  obtenerMoneda(codigoPais){
+    let xxx  = getCountryByAbbreviation  (codigoPais);
+    console.log(getCountry(xxx));
+    console.log('xxx', xxx);
+}
