@@ -18,5 +18,5 @@ try {
             pathname: null,
             parametros: null
         }
-        console.log(obj);
+        console.log(obj); 
 }

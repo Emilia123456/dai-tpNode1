@@ -8,4 +8,4 @@ try {
     monedaDelPais=obtenerMoneda(codigoPais); 
 } catch (error) {
     console.log(`La moneda del país ${codigoPais} es:${null}`);
-}
+} 

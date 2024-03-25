@@ -62,4 +62,4 @@ const OMDBGetByImdbID=async(imdbID)=>{
 
 
     
-export{OMDBSearchByPage,OMDBSearchComplete,OMDBGetByImdbID};
+export{OMDBSearchByPage,OMDBSearchComplete,OMDBGetByImdbID}; 

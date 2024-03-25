@@ -9,5 +9,5 @@ copiar(ARCHIVO_ENTRADA, ARCHIVO_SALIDA);
 function copiar(ARCHIVO_ENTRADA, ARCHIVO_SALIDA){
     const readStream = fs.createReadStream(ARCHIVO_ENTRADA)
     const writeStream = fs.createWriteStream(ARCHIVO_SALIDA)
-    readStream.pipe(writeStream)
+    readStream.pipe(writeStream) 
 }

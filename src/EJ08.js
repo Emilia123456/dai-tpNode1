@@ -4,4 +4,4 @@ const main = async () => {
     console.log(result.datos);
 };
 
-main();
+main(); 

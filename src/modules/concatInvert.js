@@ -13,4 +13,4 @@ function concatInvert(txt1, txt2){
     return inv;
 }
 
-export {concatInvert}
+export {concatInvert} 

@@ -14,4 +14,4 @@ export default class Persona {
     getInformacion(){ 
         return`nombre:${this.nombre},casado:${this.casado}`; 
     } 
-}
+} 

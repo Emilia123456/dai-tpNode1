@@ -10,5 +10,5 @@ function parsearUrl(url){
         pathname: link.pathname,
         parametros: link.searchParams
     }
-    return obj;
+    return obj; 
 }

@@ -3,4 +3,4 @@ export default class url {
         this.nombre =nombre; 
         this.casado =casado; 
     } 
-}
+} 

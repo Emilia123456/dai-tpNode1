@@ -18,4 +18,4 @@ const dividir = (a, b) => { a / b};
 
 
 // Exporto todo lo que yo quiero exponer del módulo:
-export {PI, sumar, restar, multiplicar, dividir};
+export {PI, sumar, restar, multiplicar, dividir}; 

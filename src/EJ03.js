@@ -4,4 +4,4 @@ let persona2=new Alumno("MatiasQueroso");
 let persona3=new Alumno(); 
 console.log(persona1); 
 console.log(persona2); 
-console.log(persona3.getInformacion());
+console.log(persona3.getInformacion()); 
